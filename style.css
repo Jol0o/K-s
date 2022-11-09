@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;1,400;1,500;1,700&family=Roboto:ital,wght@0,100;0,700;1,100;1,300;1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+span {
+  color: #ff7300;
+  font-weight: bold;
+}
+
+nav {
+  display: inline-block;
+  position: fixed;
+  background-color: white;
+  min-height: 50px;
+  width: 100%;
+  z-index: 2;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+}
+nav .container ul {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+nav .container ul li {
+  margin-right: 20px;
+}
+nav .container ul li .active {
+  color: black;
+}
+
+nav .container ul li a {
+  text-decoration: none;
+  color: #c0bfbf;
+}
+
+nav .container ul li a:hover {
+  color: black;
+  transition: 0.3s;
+}
+nav button {
+  background: transparent;
+  border: none;
+  color: rgba(0.21, 0.39, 0.91, 0.8);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+nav button:hover {
+  background: #ff7300;
+}
+.btn .navbar {
+  margin-right: 30px;
+  font-size: 20px;
+  display: none;
+}
+main {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #f2f4f7;
+  background-image: url(img/background.png);
+  background-repeat: no-repeat;
+  background-size: center;
+}
+
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+main .container .grid,
+.main-img {
+  max-width: 700px;
+}
+
+main .container .box h1 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+main .container .box p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+main .container .card {
+  padding: 20px;
+  height: 200px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 14px 14px 28px #c0bfbf, -14px -14px 28px #ffffff;
+}
+
+main .container .card p {
+  font-size: 25px;
+  font-weight: bold;
+}
+main .container .card button {
+  margin-top: 20px;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  background: #7e7e7e;
+  border: none;
+  color: white;
+}
+
+main .container .main-img {
+  margin: 10% 0 0 5%;
+  padding-top: 150px;
+}
+main .container .main-img img {
+  max-width: 600px;
+  z-index: -1;
+}
+
+section {
+  min-height: 70vh;
+  width: 100%;
+  background-color: white;
+  padding: 5% 0;
+}
+
+section .container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+section .container .development-cycle {
+  max-width: 500px;
+}
+section .container .development-cycle h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+section .container .development-cycle p {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 35px;
+}
+section .container .development-cycle h3 {
+  font-style: italic;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+}
+section .container .development-cycle .txt {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: black;
+}
+section .container .development-image img {
+  max-width: 500px;
+}
+
+.developed {
+  width: 100%;
+  min-height: 95vh;
+  background-color: #ebebeb;
+  background-image: url(img/undraw_real_time_collaboration_c62i\ 1.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  padding: 5% 0;
+}
+
+.developed .container {
+  min-height: 80%;
+  margin: 2% auto 0 auto;
+}
+
+.developed .container h1 {
+  font-size: 50px;
+  max-width: 600px;
+  margin-left: 7%;
+}
+
+.developed .container ul {
+  margin: 50px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 25em);
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.developed .container ul li {
+  display: flex;
+  align-items: center;
+}
+.developed .container ul img {
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: white;
+  box-shadow: -23px 23px 46px #b8b8b8, 23px -23px 46px #ffffff;
+}
+.project {
+  min-height: 50vh;
+  width: 100%;
+  background-color: #2f2e41;
+  background-image: url(img/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project .container {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.project .container .boxs {
+  max-width: 400px;
+  color: #f2f4f7;
+}
+.project .container .boxs h1 {
+  max-width: 300px;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+.project .container .boxs p {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+.project .container .box-image img {
+  min-height: 300px;
+}
+
+.application {
+  width: 100%;
+  min-height: 110vh;
+  background: url(img/undraw_dev_productivity_re_fylf\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: white;
+  padding-top: 5%;
+}
+.application .container h1 {
+  font-size: 40px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.application .container .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 600px;
+  max-width: 95%;
+  margin: 10px auto;
+}
+
+.application .container .cards .card {
+  max-width: 400px;
+  min-height: 200px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0px 2px 24px #00000014, 0px 0px 2px #00000014;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px auto;
+}
+.application .container .cards .card h1 {
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 25px;
+  margin-left: 10px;
+}
+.application .container .cards .card p {
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.team {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #f2f4f7;
+}
+
+.team .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+  padding: 2% 0;
+}
+.team .container .our-team {
+  margin-right: 10px;
+  max-width: 50%;
+  min-height: fit-content;
+  padding: 5%;
+  box-shadow: 0px 2px 24px #00000014, 0px 0px 2px #00000014;
+  font-family: "Inter", sans-serif;
+}
+.team .container .our-team h1 {
+  color: #ff7300;
+  font-size: 36pt;
+  margin-bottom: 20px;
+}
+.team .container .our-team p {
+  font-family: Roboto;
+  font-style: Medium;
+  font-size: 15 pt;
+  line-height: 20 pt;
+  line-height: 114%;
+  letter-spacing: -0.24 pt;
+  font-weight: bold;
+}
+.team .container .our-team ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+  font-style: Bold;
+  font-size: 48 pt;
+}
+.team .container .our-team ul li span {
+  color: #ff7300;
+  text-decoration: underline;
+}
+.team .container .our-team ul li h2 {
+  font-size: 48px;
+  color: black;
+}
+
+.team .container .swiper {
+  width: 40%;
+  min-height: fit-content;
+  background-image: url(team/Group\ 625897.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 80%;
+  margin-top: 5%;
+}
+.team .container .swiper .swiper-slide img {
+  max-width: 80%;
+  min-height: 500px;
+}
+.team .swiper .swiper-button-prev {
+  position: absolute;
+  left: 45%;
+  visibility: hidden;
+}
+.team .swiper .swiper-button-prev::after {
+  visibility: visible;
+  content: "<PREV";
+  position: absolute;
+  font-weight: bold;
+  letter-spacing: 3px;
+  top: -20%;
+  font-size: 12px;
+  max-width: 120px;
+  color: white;
+  text-decoration: underline;
+  font-family: Roboto;
+}
+.team .swiper .swiper-button-next {
+  position: absolute;
+  right: 30%;
+  max-width: 100px;
+  visibility: hidden;
+}
+.team .swiper .swiper-button-next::after {
+  content: "NEXT>";
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-decoration: underline;
+  position: absolute;
+  visibility: visible;
+  top: -20%;
+  font-size: 12px;
+  max-width: 100px;
+  color: white;
+  font-family: Roboto;
+}
+
+footer {
+  min-height: 25vh;
+  text-align: center;
+}
+footer .container .footer-logo {
+  margin-top: 5%;
+}
+footer .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+footer .contact .con {
+  max-width: 600px;
+  margin: 0 40px;
+}
+footer .contact .con .foot {
+  display: flex;
+  gap: 10px;
+}
+footer .contact .con .foot img {
+  height: 20px;
+}
+
+footer .contact .con p {
+  text-align: start;
+  color: #ff7300;
+}
+
+@media (max-width: 1200px) {
+  main .container {
+    margin: 0 50px;
+    padding: 20% 0;
+  }
+  main .container .main-img {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  main .container .main-img img {
+    max-width: 500px;
+  }
+
+  section .container {
+    margin: 20px 50px;
+    flex-wrap: wrap;
+  }
+  .developed .container h1 {
+    font-size: 45px;
+    margin-left: 15%;
+  }
+  .project .container .box-image img {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 992px) {
+  nav .logo {
+    margin-left: 30px;
+  }
+  main .container {
+    text-align: start;
+    margin: 0 100px;
+  }
+  main .container .box h1 {
+    font-size: 40px;
+  }
+  main .container .main-img {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  main .container .main-img img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    max-width: 500px;
+  }
+  section .container .development-cycle {
+    order: 2;
+  }
+  section .container .development-image {
+    order: 1;
+  }
+  section .container .development-image img {
+    max-width: 400px;
+  }
+  .developed .container h1 {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+  .developed {
+    background-position-y: 2000px;
+  }
+  .project .container .box-image img {
+    min-height: 300px;
+  }
+  .project {
+    background: none;
+    background-color: #2f2e41;
+  }
+  .project .container {
+    margin: 0 20px;
+  }
+  .application {
+    background-position-x: 1000px;
+  }
+  .application .container .cards {
+    justify-content: center;
+  }
+  .team .container {
+    flex-direction: column;
+  }
+  .team .container .our-team {
+    max-width: 80%;
+  }
+  .team .container .our-team ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team .swiper .swiper-button-next::after {
+    font-size: 9px;
+  }
+  .team .swiper .swiper-button-prev::after {
+    font-size: 9px;
+  }
+  .team .container .swiper {
+    background-size: 90%;
+    width: 100%;
+  }
+  .team .container .swiper img {
+    max-width: 90%;
+  }
+  nav .container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  nav .container ul {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  nav .container ul li {
+    min-height: 40px;
+    line-height: 50px;
+  }
+  nav .container ul.active {
+    display: flex;
+    overflow: hidden;
+  }
+
+  nav .container ul li a {
+    color: white;
+    text-shadow: 0 0 1px black;
+  }
+
+  nav .btn {
+    display: flex;
+    align-self: end;
+    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 5%;
+    min-height: 30px;
+    max-width: 300px;
+  }
+  nav button {
+    min-height: 30px;
+    margin-left: -20px;
+  }
+  nav .btn .navbar {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  main .container {
+    text-align: start;
+    padding-top: 25%;
+    margin: 0 30px;
+    flex-direction: column;
+    background: transparent;
+  }
+  main .container .box h1 {
+    font-size: 30px;
+  }
+  main .container .main-img {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  main .container .card {
+    display: none;
+  }
+  main .container .main-img {
+    text-align: center;
+  }
+  main .container .main-img img {
+    max-width: 400px;
+    position: static;
+    margin: auto;
+  }
+  .developed .container {
+    margin: 50px;
+  }
+  .developed .container ul {
+    margin: 30px auto;
+  }
+  .developed .container h1 {
+    font-size: 25px;
+    margin: 0 auto;
+  }
+  .project {
+    background: none;
+    background-color: #2f2e41;
+  }
+  .project .container .boxs {
+    margin-top: 50px;
+  }
+
+  .project .container .box-image img {
+    min-height: 230px;
+    margin: 100px auto 50px auto;
+  }
+  .application {
+    background-position-x: 1000px;
+  }
+  .team .swiper .swiper-button-next::after {
+    font-size: 7px;
+    left: 10%;
+    top: 10%;
+  }
+  .team .swiper .swiper-button-prev::after {
+    font-size: 7px;
+    top: 10%;
+  }
+  .team .container .swiper {
+    background-size: 100%;
+    width: 80%;
+  }
+  .team .container .swiper img {
+    max-width: 90%;
+  }
+  footer .contact {
+  }
+}
+@media (max-width: 376px) {
+  .main-img img {
+    height: 200px;
+    width: 300px;
+  }
+  .development-image img {
+    height: 300px;
+    width: 320px;
+  }
+  .developed ul {
+    padding-left: 20%;
+  }
+  footer .contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
